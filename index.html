@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Home</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(to right, #00b09b, #96c93d);
+    }
+
+    .home-container {
+      background-color: #ffffffdd;
+      padding: 30px 40px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      width: 350px;
+
+      /* Animation */
+      opacity: 0;
+      transform: translateY(40px);
+      animation: fadeInUp 1s forwards ease-out;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    label {
+      display: block;
+      margin: 10px 0 5px;
+      font-weight: 600;
+      color: #333;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+    }
+
+    button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 12px;
+      background-color: #00b09b;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #028a77;
+    }
+  </style>
+</head>
+<body>
+ <nav>
+      <a href="#">Home</a>
+      <a href="loginform.html">Loginform</a>
+      <a href="about.html">about</a>
+      <a href="contact.html">contact</a>
+
+    </nav>
+  <div class="home-container">
+    <h1>Welcome Student</h1>
+    <form action="#" method="post">
+      <label for="studentName">Enter Your Name:</label>
+      <input type="text" id="studentName" name="studentName" placeholder="e.g. John Doe" required>
+
+      <button type="submit">Enter</button>
+    </form>
+  </div>
+
+</body>
+</html>
